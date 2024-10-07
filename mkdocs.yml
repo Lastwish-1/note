@@ -1,7 +1,7 @@
 #[Info]
-site_name: Mkdocs-Wcowin中文主题 #your site name 显示在左上角
-site_url: http://wcowin.work/Mkdocs-Wcowin
-site_author: Wcowin # your name
+site_name: 世界天光的笔记本 #your site name 显示在左上角
+site_url: https://github.com/Lastwish-1/note/
+site_author: 世界天光 # your name
 #[UI]
 theme:
   name: material
@@ -9,9 +9,9 @@ theme:
   # font: #谷歌字体，自行搜索
   #   text: Bitter  #文本字体
   #   code: Roboto Mono  #代码字体
-  # logo: assets/favicon.png #左上角logo，可插入图片链接
+  logo: assets/11.png #左上角logo，可插入图片链接
 
-  favicon: https://s2.loli.net/2024/04/26/PmRdM9iGnvOJHgu.png # 网页icon
+  favicon: assets/11.png  # 网页icon
 
   palette:
     - media: "(prefers-color-scheme)"
@@ -21,11 +21,11 @@ theme:
     #primary: blue grey
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
-      primary: blue grey # 上方的
-      accent: blue # 链接等可交互元件的高亮色
+      primary: light blue # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
       # teal
       toggle:
-        icon: material/toggle-switch # 图标
+        icon: material/brightness-7 # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - media: "(prefers-color-scheme: dark)"
       scheme: slate # 夜间模式
@@ -33,13 +33,14 @@ theme:
       accent: indigo
       # teal
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-4
         name: 切换至日间模式
+    
 
   features:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     # - navigation.instant
-    #- header.autohide  #自动隐藏
+    - header.autohide  #自动隐藏
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
@@ -63,78 +64,62 @@ theme:
     repo: fontawesome/brands/github #右上角图标
     logo: logo
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
-repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
-repo_name: Mkdocs-Wcowin # 右上角的名字
+repo_url: https://github.com/Lastwish-1/note # 右上角点击跳转的链接
+repo_name: Lastwish-1/note # 右上角的名字
 
 # [Navigtion]
 nav:
-  # - 主页: index.md
-  - MKdocs中文教程:
-      - MKdocs教程(三部曲):
-          - 1. 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
-          - 2. Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
-          - 3. 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
-      - Mkdocs美化:
-          - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
-          - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
-          - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
-          - 添加在线聊天: blog/websitebeauty/webtalknow.md
-          - 添加友链: blog/websitebeauty/linktech.md
-          - 添加顶部公告栏: blog/websitebeauty/header.md
-          - 修改网站字体: blog/websitebeauty/mkdocsfont.md
-          - JS实现鼠标样式: blog/websitebeauty/shubiao.md
-          - 背景特效: blog/websitebeauty/backgroud.md
-          - 添加404页面: blog/websitebeauty/404.md
-          - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md
-  - 建设MKdocs技能指北:
-      - Markdown:
-          - Markdown指南: develop/Markdown/markdown.md
-          - MWeb Pro: develop/Markdown/MWeb.md
-      - Git 实用技巧: develop/git.md
-      - 利用Lighthouse测试网站性能: develop/lighthouse.md
-      - 如何将 github pages 迁移到 vercel 上托管: develop/vercel.md
-      - 设计美学:
-          - 唐·诺曼—情感设计的三个层次: develop/designbeauty/db1.md
-          - 我对设计的一些观点: develop/designbeauty/my-to-desihn.md
+  - 🏠主页: index.md
 
-  - 标签: tag.md
-  - 留言板: liuyanban.md
-  - Blogger:
-      - index: blog/index.md
-  - 友链:
-      - 友链: about/link.md
-  - 关于:
-      - 作者个人简介: about/geren.md
-      - 功能测试: about/test.md
-  - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
+  - 🛠标签: tag.md
+  - 🥰交流: 
+    - communication/index.md
+    - 友链: communication/link.md
+    - 留言板: communication/liuyanban.md
+  # - Blogger:
+  #     - index: blog/index.md
+  # - 友链:
+  #     - 友链: about/link.md
+  # - 关于:
+  #     - 作者个人简介: about/geren.md
+  #     - 功能测试: about/test.md
+  # - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
 
-copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2024~2025 Lastwish/All Rights Reserved. # 左下角的版权声明
 
 extra:
-  alternate:
-    - name: 简体中文
-      link: /
-      # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-      lang: zh   
-    - name: English
-      link: /Mkdocs-Wcowin/en/
-      # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-      lang: en
-    - name: China(TW)
-      link: /Mkdocs-Wcowin/ZH-TW/
-      # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-      lang: zh-TW
+  # alternate:
+  #   - name: 简体中文
+  #     link: /
+  #     # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+  #     lang: zh   
+  #   - name: English
+  #     link: /Mkdocs-Wcowin/en/
+  #     # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+  #     lang: en
+  #   - name: China(TW)
+  #     link: /Mkdocs-Wcowin/ZH-TW/
+  #     # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+  #     lang: zh-TW
   generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
   social:
-    - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
-      link: https://twitter.com/wcowin_
+    # - icon: fontawesome/brands/weixin #联系方式图标 : https://fontawesome.com/ 去这里找图标
+    #   link: https://twitter.com/wcowin_
+    - icon: fontawesome/brands/weixin
+      link: https://s2.loli.net/2024/10/07/saXIt3jK18MNhVD.jpg
+      name: weixin
+
     - icon: fontawesome/brands/github
-      link: https://github.com/Wcowin
+      link: https://github.com/Lastwish-1
+      name: Github
 
     - icon: fontawesome/regular/envelope #联系方式图标
-      link: mailto:<wangkewen821@gmail.com> #邮件联系方式
-    - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+      link: mailto:<wsj2744218616@gmail.com> #邮件联系方式
+      name: Email
+
+    # - icon: fontawesome/brands/bilibili
+    #   link: https://space.bilibili.com/171249695?spm_id_from=333.999.0.0
+    #   name: bilibili
   analytics:
     provider: google #谷歌分析
     property:
@@ -163,9 +148,12 @@ extra:
 
 plugins:
   - search #搜索配置
+  - statistics:
+      words_per_minute: 200
+      page_check_metadata: tags
   - git-committers:
       enabled: !ENV [CI, false]
-      repository: Wcowin/Mkdocs-Wcowin
+      repository: Lastwish-1/note
       branch: main
       exclude:
         - index.md
@@ -245,8 +233,10 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
   #     permalink: "\ue157"
 
 extra_javascript:
-  # - javascripts/extra.js #自定义javascript
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - javascripts/extra.js #自定义javascript
+  - javascripts/snow.js
+  #- javascripts/snowflakes.js
+  #- https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js #Latex支持
   - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
@@ -258,7 +248,8 @@ extra_css:
   - stylesheets/extra.css # 自定义CSS
   - stylesheets/link.css #友链配置
   - stylesheets/customize.css # 搜索圆角优化
-
+  #- stylesheets/snowflakes.css
+  #- stylesheets/custom.css
   # - stylesheets/video.css #播放器可选配置
   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
   # - ckplayer/css/ckplayer.css   #播放器配置

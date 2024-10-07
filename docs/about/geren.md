@@ -18,7 +18,6 @@ status: new
   href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
 />
 
-
 <!-- <img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg"> -->
 
 <p style="text-align: center; margin: 0px;" markdown>
@@ -35,7 +34,7 @@ status: new
     <p style="font-size: 18px">A college student in CQ</p>
   </div>
 </div> -->
-   
+
 
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://bento.me/wcowin){target=“_blank”}!

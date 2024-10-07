@@ -1,209 +1,134 @@
 ---
+title: Home
+comments: false
+statistics: True
 hide:
   #- navigation # 显示右
   #- toc #显示左
   - footer
   - feedback
-comments: false
 ---
-<!--
-██╗    ██╗ ██████╗ ██████╗ ██╗    ██╗██╗███╗   ██╗
-██║    ██║██╔════╝██╔═══██╗██║    ██║██║████╗  ██║
-██║ █╗ ██║██║     ██║   ██║██║ █╗ ██║██║██╔██╗ ██║
-██║███╗██║██║     ██║   ██║██║███╗██║██║██║╚██╗██║
-╚███╔███╔╝╚██████╗╚██████╔╝╚███╔███╔╝██║██║ ╚████║
- ╚══╝╚══╝  ╚═════╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝
-                                                  
+# 欢迎！
 
-
-____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
-\   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  | 
- \   \/    \/   / |  ,----'|  |  |  |  \   \/    \/   /  |  | |   \|  | 
-  \            /  |  |     |  |  |  |   \            /   |  | |  . `  | 
-   \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
-    \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
-
- __        __                _       
- \ \      / /__ _____      _(_)_ __  
-  \ \ /\ / / __/ _ \ \ /\ / / | '_ \ 
-   \ V  V / (_| (_) \ V  V /| | | | |
-    \_/\_/ \___\___/ \_/\_/ |_|_| |_|
-                                     
- ___       ___     ____     ____     ___       ___    _____      __      _  
-(  (       )  )   / ___)   / __ \   (  (       )  )  (_   _)    /  \    / ) 
- \  \  _  /  /   / /      / /  \ \   \  \  _  /  /     | |     / /\ \  / /  
-  \  \/ \/  /   ( (      ( ()  () )   \  \/ \/  /      | |     ) ) ) ) ) )  
-   )   _   (    ( (      ( ()  () )    )   _   (       | |    ( ( ( ( ( (   
-   \  ( )  /     \ \___   \ \__/ /     \  ( )  /      _| |__  / /  \ \/ /   
-    \_/ \_/       \____)   \____/       \_/ \_/      /_____( (_/    \__/    
-                                                                            
-
-
--->
-                                   
-
-<center><font  color= #518FC1 size=6 class="ml3">Mkdocs-Wcowin博客主题</font></center>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-
-
-<center>
-<font  color= #608DBD size=3>
-<span id="jinrishici-sentence">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</font>
-</center>
-
-
-<!-- 可选一言 -->
-<!-- <center>
-<font  color= #608DBD size=3>
-<p id="hitokoto">
-  <a href="#" id="hitokoto_text" target="_blank"></a>
+<div class="admonition note">
+<p><center><a href="/home/about"><img class="site-author-image" src="https://s2.loli.net/2024/10/07/7ljRnwdJtyz98EQ.jpg"/></a>
 </p>
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.querySelector('#hitokoto_text')
-      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
-</font>
-</center> -->
+</div>
+<div class="admonition info inline" style="height: 320px;  font-size: 14.5px; ">
+    <p style="text-align: left;">
+        🤗关于网站：<strong>记录自己的所学、所见、所感和所想~</strong><br/>
+        📚 最近在读的论文：<i><a href="https://arxiv.org/abs/2309.17179">TS-LLM</a></i> 和 <a href="https://arxiv.org/abs/2403.09629"> Quiet-STaR </a><br>
+        🗂️ 最近在看的网课：<a href="https://www.bilibili.com/video/BV12u4y177vG/">实用技能拾遗</a> 和  <a href="https://www.bilibili.com/video/BV1sd4y167NS/">强化学习</a> <br>
+        📺 最近在追的番and漫画：追10月新番，漫画一般不看<br>
+        🎮 最近在玩的游戏：英雄联盟手游(其实端游也会在寒暑假和朋友一起玩的 hhh)<br>
+        🎐 最近的要事：英语、论文、数学、算法以及准备保研材料
+    </p>
+</div>
 
 
-<div id="rcorners2" >
-  <div id="rcorners1">
-    <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
-    <body>
-      <font color="#4351AF">
-        <p class="p1"></p>
-<script defer>
-    //格式：2020年04月12日 10:20:00 星期二
-    function format(newDate) {
-        var day = newDate.getDay();
-        var y = newDate.getFullYear();
-        var m =
-            newDate.getMonth() + 1 < 10
-                ? "0" + (newDate.getMonth() + 1)
-                : newDate.getMonth() + 1;
-        var d =
-            newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
-        var h =
-            newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours();
-        var min =
-            newDate.getMinutes() < 10
-                ? "0" + newDate.getMinutes()
-                : newDate.getMinutes();
-        var s =
-            newDate.getSeconds() < 10
-                ? "0" + newDate.getSeconds()
-                : newDate.getSeconds();
-        var dict = {
-            1: "一",
-            2: "二",
-            3: "三",
-            4: "四",
-            5: "五",
-            6: "六",
-            0: "天",
-        };
-        //var week=["日","一","二","三","四","五","六"]
-        return (
-            y +
-            "年" +
-            m +
-            "月" +
-            d +
-            "日" +
-            " " +
-            h +
-            ":" +
-            min +
-            ":" +
-            s +
-            " 星期" +
-            dict[day]
-        );
-    }
-    var timerId = setInterval(function () {
-        var newDate = new Date();
-        var p1 = document.querySelector(".p1");
-        if (p1) {
-            p1.textContent = format(newDate);
-        }
-    }, 1000);
-</script>
-      </font>
-    </body>
-    <!-- <b><span id="time"></span></b> -->
-  </div>
-  <ul>
-    <li>通过主题和目录以打开文章</li>
-    <ul>
-      <li>基于Material for MkDocs美化</li>
-      <li>简洁美观，功能多元化</li>
-    </ul>
-    <li>简单易上手，小白配置</li>
-    <li>
-      如遇到网页卡顿的情况，请使用<strong><a href="https://www.yuque.com/wcowin/mkdocs-wcowin?# 《Mkdocs-Wcowin中文教程》" target="_blank">Mkdocs-Wcowin中文教程(语雀)</a></strong>
-    </li>
-  </ul>
-</div> 
-
-<!-- - 基于Material for MkDocs美化
-- 简洁美观，功能多元化
-- 简单易上手，小白配置
-- 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 ! -->
-
-快速谈话(1) 联系我(2)
-{ .annotate }
-
-1. Test
-2. 18939533255
-***  
-
-<!-- <strong>推荐文章:material-book:</strong>
-
-  - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
-  - [Mkdocs部署配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
-  - [如何给MKdocs添加友链](blog/websitebeauty/linktech.md)
-  - [网站添加Mkdocs博客](blog/Mkdocs/mkdocsblog.md)
-  - [Blogger](blog/index.md) -->
-
-
-
-<div class="grid cards" markdown>
-
--   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
-
-    ---
-
-    - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
-    - [Mkdocs部署配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
-    - [如何给MKdocs添加友链](blog/websitebeauty/linktech.md)
-    - [网站添加Mkdocs博客](blog/Mkdocs/mkdocsblog.md)
-    - [Blogger](blog/index.md)
-
-
--   :simple-aboutdotme:{ .lg .middle } __关于__
-
-    ---
-    - [Mkdocs-Wcowin博客主题社区](https://support.qq.com/products/646913/){target=“_blank”}
-    - [留言板](liuyanban.md)[^Knowing-that-loving-you-has-no-ending] 
-    - [Blogger](blog/index.md)   
-    [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
-
+<div class="admonition quote" style="font-size: 14px;">
+    <p style="text-align: left;">
+        ☁️ Life is not about waiting for the storm to pass, it's about learning to dance in the rain..<br/>
+        ❄️ 城南久梦，一枕槐安<br/>
+        ✡️ ある時（とき）、人（ひと）が泣（な）くのは弱（よわ）いのではなく、もうずっと強（つよ）すぎていたからだ。
+    </p>
 </div>
 
 
 
-[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
-[^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
+<style>
+  .big-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列 */
+    gap: 10px; /* 设置小div之间的间距 */
+    max-width: 700px; /* 设置最大宽度 */
+    margin: 0 auto; /* 居中显示 */
+  }
+  .small-div {
+    background-color: transparent; /* 设置背景透明 */
+    border: 1px solid #cee7ed; 
+    border-radius: 10px;
+    border-color: #cee7ed; /* 设置边框颜色 */
+    padding: 10px; /* 设置内边距 */
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.1); 设置阴影 */
+  }
+  .small-div p {
+    margin: 0; /* 清除段落的默认外边距 */
+  }
+  .small-div a {
+    /* text-decoration: none; 去除链接的下划线 */
+    color: #5fa5e7; /* 设置链接文字颜色 */
+  }
+</style>
 
+<div class="big-div">
+  <div class="small-div">
+    <p><strong>📄代码记录</strong></p>
+    期待更新...
+  </div>
+
+  <div class="small-div">
+    <p><strong>📖课程笔记</strong></p>
+    敬请期待....
+  </div>
+  <div class="small-div">
+    <p><strong>👨‍💻科研积累</strong></p>
+    有待更新....
+  </div>
+  <div class="small-div">
+    <p><strong>🔖一些碎碎念</strong></p>
+    后续会不定时加入....
+  </div>
+</div>
+
+
+
+
+<div class="admonition info" style="text-align: center; padding: 20px; font-size: 18px;">
+    本站目前共代码{{codes}}行，文章{{pages}}页，累计{{words}}字！
+</div>
+
+
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-29HZMNR0KG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-29HZMNR0KG');
+</script>
+
+
+<!-- Start of Howxm client code snippet -->
+<script>
+function _howxm(){_howxmQueue.push(arguments)}
+window._howxmQueue=window._howxmQueue||[];
+_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
+(function(){var scriptId='howxm_script';
+if(!document.getElementById(scriptId)){
+var e=document.createElement('script'),
+t=document.getElementsByTagName('script')[0];
+e.setAttribute('id',scriptId);
+e.type='text/javascript';e.async=!0;
+e.src='https://static.howxm.com/sdk.js';
+t.parentNode.insertBefore(e,t)}})();
+</script>
+<!-- End of Howxm client code snippet -->
+
+
+<!-- :material-information-outline:{ title="本站访问量" }本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
+<span id="finicount_views"></span> -->
+
+<head>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3HOcxvgwJJmkuGUi",ck:"3HOcxvgwJJmkuGUi"})</script>
+</head>
+
+
+<div class="admonition note" style="text-align: center; padding: 15px; font-size: 18px;">
    <body>
         <font color="#B9B9B9">
         <p style="text-align: center; ">
@@ -213,7 +138,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
       <div id="box1"></div>
       <script>
         function timingTime(){
-          let start = '2023-10-14 00:00:00'
+          let start = '2024-10-07 16:00:00'
           let startTime = new Date(start).getTime()
           let currentTime = new Date().getTime()
           let difference = currentTime - startTime
@@ -232,8 +157,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
       </script>
       </font>
     </body>
+</div>
 
-
-<script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
-
-
+<head>
+<script defer src="https://analytics.us.umami.is/script.js" data-website-id="dae37494-1db6-408a-afdd-1868e1a7d41a"></script>
+</head>
