@@ -28,10 +28,10 @@ theme:
     toggle:
       icon: material/brightness-7  # 图标
       name: 切换至夜间模式  # 鼠标悬浮提示
-  - media: "(prefers-color-scheme)"  # 自动模式
-    toggle:
-      icon: material/link
-      name: 关闭自动模式
+  # - media: "(prefers-color-scheme)"  # 自动模式
+  #   toggle:
+  #     icon: material/link
+  #     name: 关闭自动模式
 
     
 
