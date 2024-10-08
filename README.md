@@ -27,7 +27,11 @@
 
 
 
-目前我还没有注册域名，目前通过github pages托管的网址为：https://lastwish-1.github.io/note/，后续也会不定时更新所学、所想，大家多多关注啦。。
+目前我还没有注册域名，目前通过github pages托管的网址为：https://lastwish-1.github.io/note/
+
+
+
+后续也会不断更新，请大家多多关注啦
 
 
 

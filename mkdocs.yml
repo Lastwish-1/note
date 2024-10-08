@@ -14,27 +14,25 @@ theme:
   favicon: assets/11.png  # 网页icon
 
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: 关闭自动模式
-    #primary: blue grey
-    - media: "(prefers-color-scheme: light)"
-      scheme: default # 日间模式
-      primary: light blue # 上方的
-      accent: indigo # 链接等可交互元件的高亮色
-      # teal
-      toggle:
-        icon: material/brightness-7 # 图标
-        name: 切换至夜间模式 # 鼠标悬浮提示
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate # 夜间模式
-      primary: black
-      accent: indigo
-      # teal
-      toggle:
-        icon: material/brightness-4
-        name: 切换至日间模式
+  - media: "(prefers-color-scheme: dark)"  # 将黑夜模式放在最前面
+    scheme: slate
+    primary: black
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: 切换至日间模式
+  - media: "(prefers-color-scheme: light)"
+    scheme: default  # 日间模式
+    primary: light blue  # 上方的
+    accent: indigo  # 链接等可交互元件的高亮色
+    toggle:
+      icon: material/brightness-7  # 图标
+      name: 切换至夜间模式  # 鼠标悬浮提示
+  - media: "(prefers-color-scheme)"  # 自动模式
+    toggle:
+      icon: material/link
+      name: 关闭自动模式
+
     
 
   features:
