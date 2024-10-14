@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+toc = mkdocs_toc_plugin.plugin:TocPlugin

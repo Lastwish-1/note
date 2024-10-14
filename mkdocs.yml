@@ -69,13 +69,25 @@ repo_name: Lastwish-1/note # 右上角的名字
 nav:
   - 🏠主页: index.md
 
+
+  - 👨‍💻科研积累:
+    - sr/index.md
+    - 论文要点:
+      - sr/paper/index.md
+      - 动态推理+搜索: 
+        - sr/paper/dras/index.md
+        - TS-LLM: sr/paper/dras/TS-LLM.md
+        - Quiet-STaR: sr/paper/dras/Quiet-STaR.md
+    - 科研代码:
+      - sr/code/index.md
+      - 动态推理+搜索: 
+        - sr/code/dras/index.md
   - 🛠标签: tag.md
   - 🥰交流: 
     - communication/index.md
     - 友链: communication/link.md
     - 留言板: communication/liuyanban.md
-  # - Blogger:
-  #     - index: blog/index.md
+  
   # - 友链:
   #     - 友链: about/link.md
   # - 关于:
@@ -186,6 +198,7 @@ plugins:
       authors_file: "{blog}/.authors.yml" #作者信息
   - tags:
       tags_file: tag.md #分类标签
+  - toc
 
 markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr

@@ -10,6 +10,9 @@ hide:
 ---
 # 欢迎！
 
+<center><font  color= #518FC1 size=6 class="ml3">“心之所向 素履以往”</font></center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 <div class="admonition note">
 <p><center><a href="/home/about"><img class="site-author-image" src="https://s2.loli.net/2024/10/07/7ljRnwdJtyz98EQ.jpg"/></a>
 </p>
@@ -73,7 +76,7 @@ hide:
   </div>
   <div class="small-div">
     <p><strong>👨‍💻科研积累</strong></p>
-    有待更新....
+    <a href="sr/">厚积薄发</a><br>
   </div>
   <div class="small-div">
     <p><strong>🔖一些碎碎念</strong></p>
